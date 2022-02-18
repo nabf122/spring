@@ -13,7 +13,7 @@ public class Program {
 		Exam exam = new SongExam();
 		// ExamConsole console = new InlineExamConsole(exam); // DI
 		// ExamConsole console = new GridExamConsole(exam);
-		ExamConsole console = ?;
+		ExamConsole console = new GridExamConsole(exam);
 		console.print();
 	}
 }
