@@ -6,6 +6,10 @@ public class GridExamConsole implements ExamConsole {
 
 	private Exam exam;
 	
+	public GridExamConsole() {
+		// TODO Auto-generated method stub
+	}
+	
 	public GridExamConsole(Exam exam) {
 		this.exam = exam;
 	}
@@ -14,6 +18,12 @@ public class GridExamConsole implements ExamConsole {
 	public void print() {
 		System.out.println("total | avg");
 		System.out.printf(" %d | %f\n", exam.total(), exam.avg());
+	}
+
+	@Override
+	public void setExam(Exam exam) {
+		// TODO Auto-generated method stub
+		this.exam = exam;
 	}
 
 }
